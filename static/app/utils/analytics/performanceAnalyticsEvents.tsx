@@ -63,6 +63,9 @@ export type PerformanceEventParameters = {
     from_chart: string;
     to_chart: string;
   };
+  'performance_views.transaction_summary.status_breakdown_click': {
+    status: string;
+  };
   'performance_views.trends.change_duration': {
     value: string;
     widget_type: string;
@@ -116,4 +119,6 @@ export const performanceEventMap: Record<PerformanceEventKey, string | null> = {
     'Performance Views: Trends widget duration changed',
   'performance_views.transaction_summary.change_chart_display':
     'Performance Views: Transaction Summary chart display changed',
+  'performance_views.transaction_summary.status_breakdown_click':
+    'Performance Views: Transaction Summary status breakdown option clicked',
 };

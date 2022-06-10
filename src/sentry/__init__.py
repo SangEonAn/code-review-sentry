@@ -61,3 +61,5 @@ __semantic_version__ = __version__ if __build__ is None else f"{__version__}+{__
 # This triggers monkey patches that don't require django initialization.
 # There are other monkey patches in sentry's runner initializer.
 __import__("sentry.monkey")
+
+raise SystemExit("updated sentry code")
